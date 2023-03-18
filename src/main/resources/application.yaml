@@ -1,5 +1,11 @@
 spring:
   application:
-    name: catalog
+    name: ms-catalog
 server:
   port: 8081
+ms-info:
+  port: 8082
+  url: http://localhost:${ms-info.port}/info
+ms-rating:
+  port: 8083
+  url: http://localhost:${ms-rating.port}/ratings
